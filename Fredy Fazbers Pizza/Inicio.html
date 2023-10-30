@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #BE1C1C;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .circle.top-left {
+            top: 10px;
+            left: 10px;
+        }
+
+        .circle.top-right {
+            top: 10px;
+            right: 10px;
+        }
+
+        .circle.bottom-left {
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .circle.bottom-right {
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .movable-content {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%; /* Tamaño máximo */
+            max-height: 100%; /* Tamaño máximo */
+            width: 25%; /* Tamaño inicial */
+        }
+
+        .info-box {
+            background-color: #D9D9D9;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .info-box p {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #BE1C1C;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .extra-images {
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="circle top-left"></div>
+    <div class="circle top-right"></div>
+    <div class="circle bottom-left"></div>
+    <div class="circle bottom-right"></div>
+    <div class="movable-content">
+        <img src="freddy.png" alt="Imagen" style="width: 100%; height: auto;">
+        <div class="info-box">
+            <p>"Donde la magia y diversión se hacen realidad"</p>
+            <div class="btn-container">
+                <a href="Registro.html" class="btn">Registrarse</a>
+                <a href="IniciarSesion.html" class="btn">Iniciar Sesión</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
